@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Robotizada';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+body{
+    font: 16px Arial;
+    background-color:rgb(109, 190, 109);
+}
+
+header{
+    background-image: linear-gradient(to bottom,  rgb(121, 235, 121), rgb(0, 116, 0));
+    text-align: center;
+    padding: 10px;
+    color: white;
+    box-shadow:1px 1px 8px black;
+}
+header > nav{
+    text-align:left;
+}
+
+header > p{
+    color:rgba(255, 255, 255, 0.726);
+}
+
+nav > a:visited{
+    color:rgb(255, 255, 255)
+}
+
+nav > a{
+    text-decoration:none;
+    padding:10px;
+    transition-duration:0.5s;
+    font-weight: bold;;
+}
+
+nav > a:hover{    
+    background-color:rgb(34, 194, 34)
+}
+
+main{
+    min-width: 330px;
+    max-width: 800px;
+    background-color:white;
+    margin:1px auto 0 auto;
+    padding: 10px 30px;
+    border-radius:0px 0px 10px 10px;
+}
+
+main h1{
+    color:rgb(0, 102, 0);
+}
+
+main h2{
+    background-image: linear-gradient(to right, rgb(121, 226, 121), white);
+    color: rgb(0, 102, 0);
+}
+
+main h1, main h2{
+    font-family: Robotizada, sans-serif;
+    padding:5px;
+}
+main p{
+    text-indent:40px;
+    text-align:justify;
+}
+
+img{
+    width:100%;
+}
+img#bugdroid{
+    max-width:300px;
+    display: block; /*img é inline-level, para conseguir centralizar é preciso transformar em box-level, com o 
+    display: block;*/
+    
+}
+/*"Gambiarra" para tornar o video responsivo
+    - Colocar dentro de uma div
+    - Colocar na div position: relative
+    - Colocar na iframe dentro da div position: absolute;
+    - Ajustar no Inspecionar até achar uma config:
+        * Na div: padding-bottom
+        * No iframe: top, left, width, height 
+*/
+div.video{
+    background-color: rgb(57, 184, 57);
+    padding-bottom: 50%;
+    
+    position: relative;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 11%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+aside#Extra{
+    background-color:rgb(184, 252, 210);
+    border-radius: 10px;
+    padding:0px 0px;
+}
+
+aside#Extra > h1{
+    background-color:rgb(68, 163, 68);
+    color:white;
+    padding:8px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color:green;
+    color:white;
+    padding:5px;
+    text-align:center;
+    margin:10px 0px 0px 0px;
+
+}
+
+img{
+    margin:auto;
+}
+
+video{
+    background-color:black;
+}
